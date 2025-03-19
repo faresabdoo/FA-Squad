@@ -21,10 +21,10 @@
             <div></div>
         </div>
         <div class="menu" id="menu">
-            <a href="#hero">Home</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#services">Services</a>
-            <a href="#contact" class="fa">Contact</a>
+            <a href="#hero" onclick="closeMenu()">Home</a>
+            <a href="#portfolio" onclick="closeMenu()">Portfolio</a>
+            <a href="#services" onclick="closeMenu()">Services</a>
+            <a href="#contact" class="fa"  onclick="closeMenu()">Contact</a>
         </div>
     </nav>
 
@@ -124,6 +124,12 @@
         function toggleMenu() {
             var menu = document.getElementById("menu");
             menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+        }
+           function closeMenu() {
+            let menu = document.querySelector('.menu');
+            if (window.innerWidth <= 768) {
+                menu.style.display = 'none';
+            }
         }
     </script>
 
