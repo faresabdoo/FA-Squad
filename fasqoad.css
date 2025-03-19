@@ -235,7 +235,7 @@ footer {
         padding-right: 4%;
     }
     .hero{
-       background: url('img/back3.jpg') center/cover no-repeat;
+      background: url(img/back3.jpg) center / cover no-repeat;
         align-items: center;
     }
 
