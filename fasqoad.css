@@ -90,13 +90,13 @@ h1, h2 {
 .hero .btn {
     padding: 12px 25px;
     font-size: 18px;
-    background: red;
+    background: #c91313;
     color: white;
     border-radius: 5px;
     transition: 0.3s;
 }
 .hero .btn:hover {
-    background: white;
+    background: red;
     color: black;
 }
 
@@ -121,6 +121,34 @@ h1, h2 {
     transform: scale(1.1);
     border: 3px solid red;
 }
+/*button show more*/
+.hidden {
+    display: none;
+}
+
+#load-more {
+    margin-top: 3%;
+    padding:2% ;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #c91313;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  #load-more:hover {
+    background-color: red;
+    box-shadow: 0px 1px 2px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-2px);
+  }
 
 /* Services */
 .services {
@@ -146,7 +174,7 @@ h1, h2 {
     border: 3px solid red;
 }
 .neon-text {
-    text-shadow: 0 0 5px #ff3333, 0 0 10px #ff3333, 0 0 20px #ff3333;
+   text-shadow: 0 0 0.5px #cc1414, 0 0 0.5px #cc1414, 0 0 20px #cc1414;
 }
 
 /* Contact */
@@ -213,6 +241,36 @@ footer {
     padding: 20px;
     background: black;
     border-top: 2px solid red;
+}
+/*  nav bar update*/
+div.scorl{
+    position: fixed;
+    top: 0;
+    width: 10px;
+    height: 5px;
+    background-color: white;
+    z-index: 99999;
+    animation: scorl linear forwards;
+    animation-timeline: scroll();
+
+}
+@keyframes scorl {
+    0%{
+        width: 10px;
+        background-color:RED;
+    }
+    30%{
+        background-color: #a82323;
+    }
+    50%{
+        background-color:#e4abab ;
+    }
+    100%{
+        width: 100%;
+
+        background-color: #ffffff;
+    }
+    
 }
 @media (max-width: 768px) {
     .menu {
