@@ -172,6 +172,11 @@ h1, h2 {
 .service-item {
     margin: 20px;
 }
+.services .content .section  a{
+ 
+    color: red;
+   
+} 
 
 /* About */
 .about {
