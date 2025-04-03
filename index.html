@@ -38,7 +38,7 @@
     <!-- Portfolio -->
     <section class="portfolio" id="portfolio">
         <h2>Portfolio</h2>
-        <div class="grid">
+        <div class="grid card">
             <img src="img/portfolio/pro1.jpg" alt="Project 1">
             <img src="img/portfolio/pro22.jpg" alt="Project 2">
             <img src="img/portfolio/pro3.jpg" alt="Project 3">
@@ -53,7 +53,7 @@
     <!-- Services -->
     <section class="services" id="services">
         <h2>Services</h2>
-        <div class="content">
+        <div class="content card">
             <div class="section">
                 <img src="img/services/photoshop-express.png" alt="">
                 <h2 class="neon-text">Social media designs</h2>
@@ -90,7 +90,7 @@
     </section>
 
     <!-- About -->
-    <section class="about" id="about">
+    <section class="about card" id="about">
         <h2>About Me</h2>
         <img src="img/about/logo.jpg" alt="Your Photo">
         <p>
@@ -98,7 +98,7 @@
     </section>
 
     <!-- Contact -->
-    <section class="contact" id="contact">
+    <section class="contact card" id="contact">
         <h2>Contact Me</h2>
         <form action="#" method="POST" onsubmit="return validateForm()">
             <input type="text" id="name" placeholder="Your Name" name="name" required>
@@ -113,25 +113,6 @@
         <p>&copy; 2025 FA Squad. All Rights Reserved.</p>
     </footer>
 
-    <script>
-          // Smooth scrolling
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-            });
-        });
-        function toggleMenu() {
-            var menu = document.getElementById("menu");
-            menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
-        }
-           function closeMenu() {
-            let menu = document.querySelector('.menu');
-            if (window.innerWidth <= 768) {
-                menu.style.display = 'none';
-            }
-        }
-    </script>
-
+<script src="script.js"></script>
 </body>
 </html>
